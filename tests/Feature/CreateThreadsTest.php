@@ -70,15 +70,10 @@ class CreateThreadsTest extends TestCase
 
     }
 
-
     private function publishThread($overrides = []){
         $this->signIn()->withExceptionHandling();
         $thread = make(Thread::class,$overrides);
         return $this->post('/threads', $thread->toArray());
     }
-
-
-
-
 
 }
