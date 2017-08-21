@@ -57,7 +57,6 @@ class ThreadTest extends TestCase
     {
         $thread = create(Thread::class);
         $this->assertInstanceOf(Channel::class, $thread->channel);
-
     }
 
 
